@@ -11,7 +11,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh
-                bat "docker build -t='prajkamal/letskodeitimage' ."
+                bat "docker build -t='prajkamal/seleniumtests' ."
             }
         }
         stage('Push Image') {
@@ -19,7 +19,7 @@ pipeline {
 			    withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     //sh
 			        bat "docker login --username=${user} --password=${pass}"
-			        bat "docker push prajkamal/letskodeitimage:latest"
+			        bat "docker push prajkamal/seleniumtests:latest"
 			    }
             }
         }
