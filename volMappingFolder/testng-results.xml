@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="search-module" duration-ms="19709" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:59:07Z">
+    <groups>
+    </groups>
+    <test name="search-test-kubernetes" duration-ms="6478" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:58:54Z">
+      <class name="com.flightReservation.baseClass.CoursesSearch">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@2752f6e2]" name="beforeClass" is-config="true" duration-ms="2196" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:58:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@2752f6e2]" name="search" duration-ms="4039" started-at="2022-01-23T06:58:49Z" finished-at="2022-01-23T06:58:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kubernetes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@2752f6e2]" name="afterMethod" is-config="true" duration-ms="213" started-at="2022-01-23T06:58:54Z" finished-at="2022-01-23T06:58:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.flightReservation.baseClass.CoursesSearch -->
+    </test> <!-- search-test-kubernetes -->
+    <test name="search-test-docker" duration-ms="11061" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:58:58Z">
+      <class name="com.flightReservation.baseClass.CoursesSearch">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@129a8472]" name="beforeClass" is-config="true" duration-ms="7259" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:58:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@129a8472]" name="search" duration-ms="3673" started-at="2022-01-23T06:58:55Z" finished-at="2022-01-23T06:58:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[docker]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@129a8472]" name="afterMethod" is-config="true" duration-ms="127" started-at="2022-01-23T06:58:58Z" finished-at="2022-01-23T06:58:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.flightReservation.baseClass.CoursesSearch -->
+    </test> <!-- search-test-docker -->
+    <test name="search-test-webdriver" duration-ms="15260" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:59:03Z">
+      <class name="com.flightReservation.baseClass.CoursesSearch">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@2c8d66b2]" name="beforeClass" is-config="true" duration-ms="11823" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:58:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@2c8d66b2]" name="search" duration-ms="3341" started-at="2022-01-23T06:58:59Z" finished-at="2022-01-23T06:59:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="91" started-at="2022-01-23T06:59:02Z" finished-at="2022-01-23T06:59:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.flightReservation.baseClass.CoursesSearch -->
+    </test> <!-- search-test-webdriver -->
+    <test name="search-test-java" duration-ms="19709" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:59:07Z">
+      <class name="com.flightReservation.baseClass.CoursesSearch">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@35851384]" name="beforeClass" is-config="true" duration-ms="15964" started-at="2022-01-23T06:58:47Z" finished-at="2022-01-23T06:59:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@35851384]" name="search" duration-ms="3587" started-at="2022-01-23T06:59:03Z" finished-at="2022-01-23T06:59:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.flightReservation.baseClass.CoursesSearch@35851384]" name="afterMethod" is-config="true" duration-ms="134" started-at="2022-01-23T06:59:07Z" finished-at="2022-01-23T06:59:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.flightReservation.baseClass.CoursesSearch -->
+    </test> <!-- search-test-java -->
+  </suite> <!-- search-module -->
+</testng-results>

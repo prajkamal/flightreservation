@@ -1,0 +1,20 @@
+# Pull an Alpine image with jre
+FROM openjdk:8u191-jre-alpine3.8
+#FROM maven:3.6.0-jdk-8-alpine
+
+#Create WorkSpace. Here the path is /usr/share/dockerraj and this will be in the alpine container not in Windows
+WORKDIR /usr/share/dockerraj
+
+#Add Jar files from the target folder
+
+ADD target/selenium-docker.jar         selenium-docker.jar
+ADD target/selenium-docker-tests.jar   selenium-docker-tests.jar
+ADD target/libs                       libs
+
+#Add Suite files
+
+ADD searchPageTestNG.xml            searchPageTestNG.xml
+
+# ENTRY POINT containing BROWSER, HUB_HOST and MODULE
+
+ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DBROWSER=$BROWSER -DHUB_HOST=$HUB_HOST org.testng.TestNG $MODULE

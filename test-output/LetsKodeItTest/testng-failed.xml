@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LetsKodeItTest]" parallel="tests">
+  <test thread-count="5" name="RegressionTest1(failed)" parallel="tests">
+    <parameter name="name" value="David"/>
+    <classes>
+      <class name="com.flightReservation.baseClass.LetsKodeItPractice">
+        <methods>
+          <include name="dropDown"/>
+          <include name="beforeMethod"/>
+          <include name="selectRadio"/>
+          <include name="selectCheckBx"/>
+          <include name="clickPractice"/>
+          <include name="hideshow"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.flightReservation.baseClass.LetsKodeItPractice -->
+    </classes>
+  </test> <!-- RegressionTest1(failed) -->
+  <test thread-count="5" name="RegressionTest2(failed)" parallel="tests">
+    <parameter name="name" value="Elaiane"/>
+    <classes>
+      <class name="com.flightReservation.baseClass.LetsKodeItPractice">
+        <methods>
+          <include name="dropDown"/>
+          <include name="beforeMethod"/>
+          <include name="selectRadio"/>
+          <include name="selectCheckBx"/>
+          <include name="clickPractice"/>
+          <include name="hideshow"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.flightReservation.baseClass.LetsKodeItPractice -->
+    </classes>
+  </test> <!-- RegressionTest2(failed) -->
+</suite> <!-- Failed suite [LetsKodeItTest] -->

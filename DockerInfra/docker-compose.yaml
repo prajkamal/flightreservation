@@ -1,0 +1,29 @@
+version: "3"
+services:
+  hub:
+    image: selenium/hub:3.141.59
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.141.59
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  firefox:
+    image: selenium/node-firefox:3.141.59
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+  letskodeit:
+    image: prajkamal/letskodeitimage
+    depends_on:
+      - chrome
+      - firefox
+    environment:
+      - BROWSER=chrome
+      - MODULE=testNGLetsKodeIt.xml
+      - HUB_HOST=hub
+    volumes:
+      - ./volMappingFolder:/usr/share/rajdocker/test-output

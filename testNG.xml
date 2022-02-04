@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SanityTest" parallel="tests">
+	<test name="SampleTest" preserve-order="true">
+		<parameter name="firstName" value="David"></parameter>
+		<parameter name="lastName" value="Henry"></parameter>
+		<parameter name="userName" value="david.henry@gmail.com"></parameter>
+		<parameter name="password" value="123456"></parameter>
+		<parameter name="confirmPassword" value="123456"></parameter>
+		<classes>
+			<!-- <class name="com.flightReservation.baseClass.ReserveFlightsTest"></class>  -->
+			<class name="com.flightReservation.baseClass.FlightReservation"></class>
+			
+		</classes>
+	</test>
+</suite>

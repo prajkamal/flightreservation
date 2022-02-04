@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LetsKodeItTest" parallel="tests">
+	<test name="RegressionTest1" preserve-order="true">
+		<parameter name="name" value="David"></parameter>
+		<classes>
+			<class
+				name="com.flightReservation.baseClass.LetsKodeItPractice"></class>
+		</classes>
+	</test>
+		<test name="RegressionTest2" preserve-order="true">
+		<parameter name="name" value="Elaiane"></parameter>
+		<classes>
+			<class
+				name="com.flightReservation.baseClass.LetsKodeItPractice"></class>
+		</classes>
+	</test>
+</suite>

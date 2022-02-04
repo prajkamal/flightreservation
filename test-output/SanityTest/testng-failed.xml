@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SanityTest]" parallel="tests">
+  <test thread-count="5" name="SampleTest(failed)" parallel="tests">
+    <parameter name="firstname" value="David"/>
+    <parameter name="password" value="123456"/>
+    <parameter name="confirmpassword" value="123456"/>
+    <parameter name="lastname" value="Henry"/>
+    <parameter name="username" value="david.henry@gmail.com"/>
+    <classes>
+      <class name="com.flightReservation.baseClass.TestRegistration">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="clickFlights"/>
+          <include name="registration"/>
+          <include name="findFlights"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.flightReservation.baseClass.TestRegistration -->
+    </classes>
+  </test> <!-- SampleTest(failed) -->
+</suite> <!-- Failed suite [SanityTest] -->
