@@ -16,6 +16,7 @@ pipeline {
         }
         stage('Push Image') {
             steps {
+              // provide the credentials which are provided in the Jenkins credential manager.
 			    withCredentials([usernamePassword(credentialsId: 'rajdocker', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     //sh
 			        bat "docker login --username=${user} --password=${pass}"
