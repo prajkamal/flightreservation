@@ -11,7 +11,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh
-                bat "docker build --pull -t='prajkamal/seleniumtests'."
+                bat "docker build -t=prajkamal/seleniumtests ."
             }
         }
         stage('Push Image') {
