@@ -26,4 +26,4 @@ services:
           - MODULE=searchPageTestNG.xml
           - BROWSER=firefox
     volumes:
-          - ./output/testresults-docker:/usr/share/udemy/test-output
+          - ./testresults-docker:/usr/share/udemy/test-output
